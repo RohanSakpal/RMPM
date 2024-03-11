@@ -1,0 +1,100 @@
+mat-toolbar {
+    background: #edeff170;
+    color: #2c3774;
+}
+mat-sidenav {
+    margin: 0.3rem;
+    width: 16.3rem;
+    border-right: none;
+    background-color: #4268a1;
+    border-radius: 0.8rem;
+}
+.content {
+    font-size: 1rem;
+    font-family: sans-serif;
+    height: calc(100vh - 7.8rem);
+    border-radius: 0.8rem;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    padding: 0.8rem;
+    overflow-y: auto;
+}
+mat-sidenav-container {
+    height: calc(100vh - 3.3rem);
+}
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+.name {
+    margin-top: 0.8rem;
+    font-weight: normal;
+}
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgray;
+}
+mat-divider {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.5);
+}
+.profile {
+    display: inline-flex;
+    height: 63px;
+}
+.flexExpand {
+    flex: 1 1 auto;
+}
+.logo {
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FC4E0BAQFvsOnYwNdT0Q%2Fcompany-logo_200_200%2F0%2F1631344132097%3Fe%3D2147483647%26v%3Dbeta%26t%3Dci6pqwHXonwi0yMY-GEgc0s4ZyR_SqIrLAu-REyTHTg&tbnid=T2bC5xw0jM8ceM&vet=12ahUKEwirr5vB2uyEAxWjhGMGHXBEAB8QMygAegQIARBO..i&imgrefurl=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fhector-beverages-pvt-ltd&docid=ITywSiODezzIyM&w=200&h=200&q=hector%20beverages&ved=2ahUKEwirr5vB2uyEAxWjhGMGHXBEAB8QMygAegQIARBO');
+    width: 300px;
+    height: 80px;
+    -webkit-background-size : 300px 80px;
+    background-size: 300px 80px;
+    margin: auto;
+}
+.logo-secondary {
+    background-image: url('https://www.google.com/imgres?imgurl=http%3A%2F%2F5.imimg.com%2Fdata5%2FSELLER%2FDefault%2F2022%2F10%2FZC%2FTI%2FNR%2F27851908%2Fpaperboat-swing-500x500.webp&tbnid=ywiWnmSbVmxuYM&vet=12ahUKEwirr5vB2uyEAxWjhGMGHXBEAB8QMygBegQIARBQ..i&imgrefurl=https%3A%2F%2Fwww.indiamart.com%2Fproddetail%2Fpaperboat-swing-27369634130.html&docid=dW9hRHjE1b24UM&w=500&h=500&q=hector%20beverages&ved=2ahUKEwirr5vB2uyEAxWjhGMGHXBEAB8QMygBegQIARBQ');
+}
+img, svg {
+    vertical-align: middle;
+    height: 42px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+button.headerperson {
+    background: none;
+    border: 1px solid #cec9c9;
+    background-color: #ffffff;
+    color: #673ab7;
+}
+button.headerperson:hover {
+    background: #89891a;
+    color: #2d1655;
+}
+.primaryImage img {
+    padding-left: 0.5rem;
+}
+.secondaryImage img {
+    margin-right: 0.5rem;
+}
+.mdc-list-item__primary-text {
+    font-size: 2rem;
+}
+.list {
+    list-style: none;
+    padding: 2px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0.2rem 0.2rem 1rem rgb(243,241,241);
+        background-color: #285299;
+        border-radius: 0.7rem;
+    }
+}

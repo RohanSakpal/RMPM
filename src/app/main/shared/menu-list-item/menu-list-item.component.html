@@ -1,0 +1,30 @@
+<a mat-list-item (click)="onItemSelected(item)" routerLinkActive="active-link"
+    [ngClass]="{'active':item.route ? router.isActive(item.route,true): false, 'expanded':expanded}">
+
+    @if(depth == 0) {
+        <mat-icon class="routeIcon">label_important</mat-icon>
+    }
+    @if(depth == 1) {
+        <mat-icon class="routeIcon"><span class="circle"></span></mat-icon>
+    }
+    @if(depth == 2) {
+        <mat-icon class="routeIcon">chevron_right</mat-icon>
+    }
+    @if(showLeftNav) {
+        <span>{{item.displayName}}</span>
+    }
+    @if(item.children && item.children.length && showLeftNav) {
+        <span fxFlex>
+            <span fxFlex=2></span>
+            <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'" style="float: right;">
+                expand_more
+            </mat-icon>
+        </span>
+    }
+</a>
+@if(expanded) {
+    <div>
+        <app-menu-list-item *ngFor="let child of item.children" [item]="child" [depth]="depth+1">
+        </app-menu-list-item>
+    </div>
+}

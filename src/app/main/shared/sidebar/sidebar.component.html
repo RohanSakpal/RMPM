@@ -1,0 +1,34 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <mat-nav-list>
+            @for (item of menuModel; track $index) {
+                <app-menu-list-item [showLeftNav]="showLeftNav" class="list"></app-menu-list-item>
+            }
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar class="fixed-topnav mat-elevation-z8 shadow">
+            <mat-toolbar-row>
+                <button mat-icon-button (click)="showAndHideLeftNav()"><mat-icon>menu</mat-icon></button>
+                <div class="primaryImage"><img src="" alt=""></div>
+                <span class="flexExpand"></span>
+                <div>
+                    <span>
+                        <button [matMenuTriggerFor]="user" mat-icon-button class="headerperson">
+                            <i class="material-icons">account_circle</i>
+                        </button>
+                        <mat-menu #user="matMenu" x-position="before">
+                            <button mat-menu-item (click)="logout()">
+                                <i class="material-icons">logout</i>Logout
+                            </button>
+                        </mat-menu>
+                    </span>
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div class="content mat-elevation-z8">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

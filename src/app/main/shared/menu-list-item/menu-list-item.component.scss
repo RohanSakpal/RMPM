@@ -1,0 +1,21 @@
+:host {
+    display: block;
+    outline: none;
+
+    .mat-list-item.active {
+        background-color: rgb(4,6,85);
+    }
+    :hover,
+    :focus {
+        >.mat-list-item:not(.expanded) {
+            background-color: rgb(4,6,85);
+        }
+    }
+}
+.circle {
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: inline-block;
+}
